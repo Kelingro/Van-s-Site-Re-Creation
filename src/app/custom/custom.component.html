@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="card border-0 text-center text-white col-6 sticky-top">
+        <img src="https://images.vans.com/is/image/VansBrand/customs-left-col-bg-blk?$original-size-png$" class="card-img" alt="...">
+        <div class="position-absolute top-50 card-img-overlay">
+          <h4 class="card-title fw-bold text-center">CUSTOM</h4>
+          <div class="d-flex justify-content-center"><p class="card-text text-center fs-6" style="width: 200px;">A tradition since 1966, the creativity is still in your hands. Pick shoes, clothing or backpacks and make them yours.</p></div>
+          <button href="#" class="button m-3 fs-6 text-uppercase" style="height: 60px; width: 165px;">GET STARTED</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div *ngFor="let card of cards">
+                    <div class="carousel-item active"><app-card-carousel upper={{card.upper}} lower={{card.lower}} descr={{card.descr}}></app-card-carousel></div> 
+                </div>
+            </div>
+            <div class="text-white"> more bg-white</div>
+        </div>
+        <div class="card border-0 text-center">
+            <div class="card-body">
+                <h3 class="fw-bold text-center mt-5">#VANSCUSTOMS</h3>
+                <p class="text-center mb-5">Tag your pics with #VANSCUSTOMS to be featured on the site</p>
+                <button style="height: 50px; width: 145px;" class="m-5 btn-dark">LOAD MORE</button>
+            </div>
+
+        </div>
+    </div>
+</div>

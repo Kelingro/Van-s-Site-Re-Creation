@@ -1,0 +1,41 @@
+
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block; 
+    }	
+
+.dropbtn {
+    color: black;
+    padding: inherit;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropbtn {
+    color: #d51920;
+  }
+
+  .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+  
+  .dropdown-item:hover{
+    color: #d51920;
+    background-color: black;
+    display: block;
+  }
+
+  .dropdown{
+    position:static !important;
+  }
