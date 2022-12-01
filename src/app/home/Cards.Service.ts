@@ -14,6 +14,7 @@ export class CardsService
     constructor (private http:HttpClient) {
         
     }
+    
 
     getCards(){
         return this.http.get<cardModel []>(this.baseURL + this.CardsEndPoint)
@@ -22,6 +23,10 @@ export class CardsService
     getCar(index:number)
     {
         return this.http.get<cardModel>(this.baseURL + 'Cards' + '/' + index + '.json')
+    }
+
+    addCard(card:cardModel) {
+
     }
 
 }

@@ -26,6 +26,14 @@ import { PinkcardComponent } from './pinkcard/pinkcard.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component'
+import { environment } from 'src/environments/environment';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AdditionComponent } from './addition/addition.component';
+import { FormsModule } from '@angular/forms';
+import { ClassicsComponent } from './classics/classics.component';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -51,12 +59,16 @@ import { LoginComponent } from './login/login.component'
     CardCarouselComponent,
     PinkcardComponent,
     MyInfoComponent,
-    LoginComponent
+    LoginComponent,
+    AdditionComponent,
+    ClassicsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent]

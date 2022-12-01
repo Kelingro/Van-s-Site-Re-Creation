@@ -1,0 +1,36 @@
+<div class="container mt-5">
+
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-8" alt="fuck it didnt load" >
+
+            <form #postForm="ngForm" (ngSubmit)="addProduct(postForm.value)">
+
+                <div class="input-group">
+                    <span class="input-group-text">image</span>
+                    <input type="text" class="form-control" ngModel name="gif">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Title</span>
+                    <input type="text" class="form-control" ngModel name="title">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">SubTitle</span>
+                    <input type="text" class="form-control" ngModel name="subt">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Button</span>
+                    <input type="text" class="form-control" ngModel name="but">
+                </div>
+
+                <button class="btn"  type="submit">
+                    Add Shoe
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>

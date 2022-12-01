@@ -25,10 +25,11 @@ export class HomeComponent implements OnInit{
     }
   }
   ngOnInit(): void {
-    this.CardsService.getCards().subscribe((data: cardModel []) => {
+    this.CardsService.getCards().subscribe((data: cardModel []) =>{
       console.log("fetchign cards")
       console.log(data)
     });
+    throw new Error('Method not implemented.');
   }
 
 }
