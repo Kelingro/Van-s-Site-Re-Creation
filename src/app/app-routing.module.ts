@@ -9,6 +9,7 @@ import { CustomComponent } from './custom/custom.component';
 import { LoginComponent } from './login/login.component';
 import { AdditionComponent } from './addition/addition.component';
 import { ClassicsComponent } from './classics/classics.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'custom', component: CustomComponent },
   { path: 'login', component: LoginComponent},
   { path: 'add', component: AdditionComponent},
-  { path: 'classic', component: ClassicsComponent}
+  { path: 'classic', component: ClassicsComponent},
+  { path: 'auth', component: AuthComponent}
 ];
 
 @NgModule({

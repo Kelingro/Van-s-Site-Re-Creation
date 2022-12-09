@@ -34,6 +34,7 @@ import { AdditionComponent } from './addition/addition.component';
 import { FormsModule } from '@angular/forms';
 import { ClassicsComponent } from './classics/classics.component';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     MyInfoComponent,
     LoginComponent,
     AdditionComponent,
-    ClassicsComponent
+    ClassicsComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
